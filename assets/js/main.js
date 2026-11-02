@@ -444,10 +444,10 @@
     errEl.textContent = '';
     if (step === 4) {
       $('#wizardSummary').innerHTML = `
-        <strong>Resumen:</strong><br/>
-        🛠️ ${getVals('servicio').join(', ')}<br/>
-        🏠 ${getVals('inmueble')[0]} en ${$('#wLocalidad').value || 'Jaén'}<br/>
-        ⏱️ ${getVals('urgencia')[0]}`;
+        <strong>Resumen de tu solicitud:</strong>
+        <div class="wizard__summary-item"><span class="wizard__summary-label">Servicio:</span> <span>${getVals('servicio').join(', ')}</span></div>
+        <div class="wizard__summary-item"><span class="wizard__summary-label">Inmueble:</span> <span>${getVals('inmueble')[0]} en ${$('#wLocalidad').value || 'Jaén'}</span></div>
+        <div class="wizard__summary-item"><span class="wizard__summary-label">Urgencia:</span> <span>${getVals('urgencia')[0]}</span></div>`;
     }
   }
   function validate() {
@@ -464,13 +464,13 @@
     const err = validate();
     if (err) { errEl.textContent = err; wizard.classList.remove('shake'); void wizard.offsetWidth; wizard.classList.add('shake'); return; }
     if (step === 4) {
-      const msg = `Hola GINSA 👋, quiero pedir presupuesto:\n\n` +
-        `🛠️ Servicio: ${getVals('servicio').join(', ')}\n` +
-        `🏠 Inmueble: ${getVals('inmueble')[0]}\n` +
-        `📍 Localidad: ${$('#wLocalidad').value || 'Jaén'}\n` +
-        `⏱️ Urgencia: ${getVals('urgencia')[0]}\n` +
-        ($('#wDetalle').value.trim() ? `📝 Detalle: ${$('#wDetalle').value.trim()}\n` : '') +
-        `\n👤 ${$('#wNombre').value.trim()} · 📞 ${$('#wTelefono').value.trim()}`;
+      const msg = `Hola GINSA, quiero pedir presupuesto:\n\n` +
+        `• Servicio: ${getVals('servicio').join(', ')}\n` +
+        `• Inmueble: ${getVals('inmueble')[0]}\n` +
+        `• Localidad: ${$('#wLocalidad').value || 'Jaén'}\n` +
+        `• Urgencia: ${getVals('urgencia')[0]}\n` +
+        ($('#wDetalle').value.trim() ? `• Detalle: ${$('#wDetalle').value.trim()}\n` : '') +
+        `\nContacto: ${$('#wNombre').value.trim()} · Tel: ${$('#wTelefono').value.trim()}`;
       window.open(waLink(msg), '_blank');
       step = 5; wizard.classList.add('done'); renderStep();
       return;
