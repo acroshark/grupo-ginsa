@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedir Presupuesto Gratis · GINSA | Reparaciones y Reformas Jaén</title>
+  <meta name="description" content="Solicita tu presupuesto online para reparaciones del hogar en Jaén y provincia en 30 segundos. Visita y valoración gratuita sin compromiso." />
+  <meta name="theme-color" content="#05080d" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Presupuesto Gratis Online · GINSA Jaén" />
+  <meta property="og:description" content="Calcula y solicita tu presupuesto para albañilería, pintura, fontanería, electricidad o humedades sin compromiso." />
+  <meta property="og:image" content="assets/img/hero.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- ============ TOPBAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <div class="topbar__left">
+        <span class="badge-24"><span class="pulse"></span> Servicio 24 Hrs</span>
+        <span class="topbar__loc">
+          <svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+          Jaén y provincia
+        </span>
+      </div>
+      <div class="topbar__right">
+        <a href="mailto:ginsamultiservicios@gmail.com">ginsamultiservicios@gmail.com</a>
+        <a href="https://www.facebook.com/search/top?q=ginsa%20multiservicios" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.7.5-1 1-1h2V2h-3c-3 0-4 2-4 4.5V8H8v3.5h2V22h4V11.5h2.7L17 8h-3Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/ginsamultiservicios/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM21.9 7c-.1-1.6-.4-3-1.6-4.2C19.1 1.6 17.6 1.2 16 1.1 14.4 1 9.6 1 8 1.1c-1.6.1-3 .5-4.2 1.7C2.6 4 2.2 5.4 2.1 7 2 8.6 2 15.4 2.1 17c.1 1.6.4 3 1.7 4.2 1.2 1.2 2.6 1.6 4.2 1.7 1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.7 1.2-1.2 1.6-2.6 1.7-4.2.1-1.6.1-8.4 0-10Zm-2.1 12.6a3.3 3.3 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.3 3.3 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.6s-.1-4.4.4-5.7A3.3 3.3 0 0 1 6.6 4.5C7.9 4 10.9 4.1 12.3 4.1s4.4-.1 5.7.4a3.3 3.3 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.3-.4 5.6Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="brand" aria-label="GINSA inicio">
+        <img src="assets/img/logo-mark.svg" alt="" class="brand__mark" width="54" height="54" />
+        <span class="brand__text">
+          <span class="brand__name">GINSA</span>
+          <span class="brand__sub">Grupo Integral de Multiservicios</span>
+        </span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html" class="nav__link">Inicio</a>
+        <a href="nosotros.html" class="nav__link">Nosotros</a>
+        <a href="servicios.html" class="nav__link">Servicios</a>
+        <a href="proyectos.html" class="nav__link">Proyectos</a>
+        <a href="presupuesto.html" class="nav__link active">Presupuesto</a>
+        <a href="contacto.html" class="nav__link">Contacto</a>
+        <a href="tel:+34722311706" class="btn btn--primary nav__cta-mobile">Llamar 722 311 706</a>
+      </nav>
+      <a href="tel:+34722311706" class="header__phone magnetic">
+        <span class="header__phone-icon">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+        </span>
+        <span>
+          <small>Llámanos 24h</small>
+          <strong>722 311 706</strong>
+        </span>
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Solicitud Online</span>
+        <h1 class="page-hero__title">Pide tu presupuesto en <span class="text-gradient">30 segundos</span></h1>
+        <p class="page-hero__lead">Responde a 4 sencillas preguntas y nuestro equipo técnico te contactará con una valoración clara, cerrada y sin compromiso.</p>
+        <div class="page-hero__breadcrumbs">
+          <a href="index.html">Inicio</a>
+          <span>/</span>
+          <span>Presupuesto</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ASISTENTE WIZARD ============ -->
+    <section class="section quote" id="presupuesto" style="padding-top: 60px;">
+      <div class="container quote__grid">
+        <div class="quote__intro reveal-left">
+          <span class="eyebrow">Sin sorpresas</span>
+          <h2 class="section__title">Presupuesto claro, <span class="text-gradient">gratuito y directo</span></h2>
+          <p class="lead">Nos desplazamos a tu domicilio en Jaén o en cualquier pueblo de la provincia para valorar el trabajo sobre el terreno.</p>
+          <div class="quote__perks">
+            <div><strong>0 €</strong><span>Visita y valoración sin compromiso</span></div>
+            <div><strong>Rápido</strong><span>Respuesta en el mismo día</span></div>
+            <div><strong>Cerrado</strong><span>Sin costes ocultos al terminar</span></div>
+          </div>
+          <div style="margin-top: 2rem; padding: 1.4rem; background: rgba(255,255,255,.05); border-radius: var(--radius); border: 1px solid rgba(255,255,255,.1);">
+            <p style="color: var(--ice); font-weight: 600; margin-bottom: .4rem;">¿Es una urgencia?</p>
+            <p style="font-size: .92rem; color: var(--muted-light); margin-bottom: 1rem;">Si tienes una fuga de agua, te has quedado sin luz o no puedes abrir la puerta, no esperes al formulario: llámanos directamente.</p>
+            <a href="tel:+34722311706" class="btn btn--white magnetic">Llamar urgente 24h · 722 311 706</a>
+          </div>
+        </div>
+
+        <form class="wizard reveal-right" id="wizard" novalidate>
+          <div class="wizard__progress"><span id="wizardBar"></span></div>
+          <div class="wizard__steps-label"><span id="wizardStepNum">1</span> / 4</div>
+
+          <div class="wizard__step active" data-step="1">
+            <h3>¿Qué tipo de trabajo necesitas?</h3>
+            <div class="options options--grid" data-name="servicio">
+              <label class="opt">
+                <input type="checkbox" value="Albañilería" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 9.3h18M3 14.6h18M8 4v5.3M16 4v5.3M12 9.3v5.3M7 14.6V20M17 14.6V20"/></svg></span>
+                  Albañilería
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Pintura" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="13" height="6" rx="1.5"/><path d="M16 6h2a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-7v3"/><rect x="9" y="15" width="4" height="6" rx="1"/></svg></span>
+                  Pintura
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Electricidad" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></span>
+                  Electricidad
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Fontanería" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M4 4h5v4H7v3a3 3 0 0 0 3 3h4v-2h4v5h-4v-1h-4a5 5 0 0 1-5-5V8H4V4Z"/><circle cx="17" cy="19" r="2"/></svg></span>
+                  Fontanería
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Calefacción" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M12 2c1 3 5 6.5 5 10.5a5 5 0 0 1-10 0C7 8.5 11 5 12 2Z"/><path d="M12 14.5a2 2 0 0 0-2 2c0 1.2 1 1.8 2 2.5 1-.7 2-1.3 2-2.5a2 2 0 0 0-2-2Z"/></svg></span>
+                  Calefacción
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Humedades" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M12 2.5S5.5 9.5 5.5 14a6.5 6.5 0 0 0 13 0c0-4.5-6.5-11.5-6.5-11.5Z"/><path d="M9 15a3 3 0 0 0 3 3"/></svg></span>
+                  Humedades
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Cerrajería" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="4"/><path d="m10.5 12.5 9-9M16.5 6.5l2.5 2.5M14 9l2 2"/></svg></span>
+                  Cerrajería
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Persianas" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 7.5h18M3 11.5h18M3 15.5h18M12 18.5v3"/></svg></span>
+                  Persianas
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Iluminación" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5V16h8v-2.5A6 6 0 0 0 12 3Z"/></svg></span>
+                  Iluminación
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Montaje de muebles" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4M2 13a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3ZM5 18v3M19 18v3"/></svg></span>
+                  Muebles
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Reforma integral" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="m3 10.5 9-7.5 9 7.5M5 9.5v10.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5M10 21v-6h4v6"/></svg></span>
+                  Reforma integral
+                </span>
+              </label>
+              <label class="opt">
+                <input type="checkbox" value="Otro" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg></span>
+                  Otro
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="wizard__step" data-step="2">
+            <h3>¿Dónde es el trabajo?</h3>
+            <div class="options" data-name="inmueble" data-single>
+              <label class="opt">
+                <input type="radio" name="inmueble" value="Piso" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M11 21v-3h2v3"/></svg></span>
+                  Piso
+                </span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="inmueble" value="Casa / adosado" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="m2 11 8-7 8 7v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-9ZM18 10l4 3.5V20a1 1 0 0 1-1 1h-3M9 21v-5h4v5"/></svg></span>
+                  Casa / adosado
+                </span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="inmueble" value="Cortijo / casa de campo" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="m2 12 7-6 7 6v8a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-8ZM16 14.5l5-1.5v7a1 1 0 0 1-1 1h-4M7 21v-4h4v4M18 5.5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/></svg></span>
+                  Cortijo / casa de campo
+                </span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="inmueble" value="Local / oficina" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M3 9 5 4h14l2 5M3 9h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9ZM3 9a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 3 0M9 21v-6h6v6"/></svg></span>
+                  Local / oficina
+                </span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="inmueble" value="Comunidad de vecinos" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M2 13 8 8l6 5v7a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-7ZM14 10l5-4 5 4v10a1 1 0 0 1-1 1h-5M6 21v-4h2v4M18 21v-4h2v4"/></svg></span>
+                  Comunidad de vecinos
+                </span>
+              </label>
+            </div>
+            <label class="field">
+              <span>Localidad</span>
+              <input type="text" id="wLocalidad" placeholder="Jaén, Martos, Mancha Real…" value="Jaén" />
+            </label>
+          </div>
+
+          <div class="wizard__step" data-step="3">
+            <h3>¿Con qué urgencia?</h3>
+            <div class="options" data-name="urgencia" data-single>
+              <label class="opt opt--urgent">
+                <input type="radio" name="urgencia" value="¡Urgente! (24h)" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M12 3v3M18.4 5.6l-2.1 2.1M5.6 5.6l2.1 2.1M6 14a6 6 0 0 1 12 0v4H6v-4ZM4 18h16M7 21h10"/></svg></span>
+                  ¡Urgente! Lo antes posible
+                </span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="urgencia" value="Esta semana" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 9h18M7 13h4M7 17h8"/></svg></span>
+                  Esta semana
+                </span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="urgencia" value="Este mes" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M16 2v4M8 2v4M3 9h18M8 13h2M14 13h2M8 17h2M14 17h2"/></svg></span>
+                  Este mes
+                </span>
+              </label>
+              <label class="opt">
+                <input type="radio" name="urgencia" value="Sin prisa, solo información" />
+                <span>
+                  <span class="opt__icon"><svg viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8.5Z"/></svg></span>
+                  Sin prisa, solo información
+                </span>
+              </label>
+            </div>
+            <label class="field">
+              <span>Cuéntanos brevemente (opcional)</span>
+              <textarea id="wDetalle" rows="3" placeholder="Ej.: mancha de humedad en el salón de unos 2 m²…"></textarea>
+            </label>
+          </div>
+
+          <div class="wizard__step" data-step="4">
+            <h3>¿Cómo te contactamos?</h3>
+            <label class="field"><span>Nombre</span><input type="text" id="wNombre" placeholder="Tu nombre" required /></label>
+            <label class="field"><span>Teléfono</span><input type="tel" id="wTelefono" placeholder="600 000 000" required /></label>
+            <div class="wizard__summary" id="wizardSummary"></div>
+          </div>
+
+          <div class="wizard__step wizard__done" data-step="5">
+            <div class="done__check"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path d="M14 27l8 8 16-16"/></svg></div>
+            <h3>¡Gracias! Solicitud generada</h3>
+            <p>Se ha preparado tu mensaje para WhatsApp. Pulsa en <strong>enviar</strong> y te responderemos inmediatamente.</p>
+            <button type="button" class="btn btn--ghost" id="wizardRestart">Nueva solicitud</button>
+          </div>
+
+          <div class="wizard__nav">
+            <button type="button" class="btn btn--ghost" id="wizardPrev" disabled>Atrás</button>
+            <button type="button" class="btn btn--primary" id="wizardNext">Siguiente</button>
+          </div>
+          <p class="wizard__error" id="wizardError"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIOS ============ -->
+    <section class="section testimonials" id="opiniones">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Opiniones reales</span>
+          <h2 class="section__title">Lo que opinan <span class="text-gradient">nuestros clientes</span></h2>
+        </div>
+        <div class="slider reveal" id="slider">
+          <div class="slider__track" id="sliderTrack">
+            <article class="tcard">
+              <div class="stars">★★★★★</div>
+              <p>“Teníamos humedad en toda la planta baja de la casa del barrio de San Ildefonso. La solucionaron y además nos pintaron. Muy limpios y puntuales.”</p>
+              <div class="tcard__author"><span class="avatar">MC</span><div><strong>María C.</strong><small>Jaén capital</small></div></div>
+            </article>
+            <article class="tcard">
+              <div class="stars">★★★★★</div>
+              <p>“Se nos rompió una tubería un domingo por la noche y en menos de una hora estaban en casa. Servicio 24h de verdad.”</p>
+              <div class="tcard__author"><span class="avatar">AR</span><div><strong>Antonio R.</strong><small>Martos</small></div></div>
+            </article>
+            <article class="tcard">
+              <div class="stars">★★★★★</div>
+              <p>“Nos reformaron el baño y la cocina del cortijo. Un solo equipo para albañilería, fontanería y electricidad. Comodísimo.”</p>
+              <div class="tcard__author"><span class="avatar">JL</span><div><strong>José Luis P.</strong><small>Mancha Real</small></div></div>
+            </article>
+            <article class="tcard">
+              <div class="stars">★★★★★</div>
+              <p>“Encalaron la fachada y arreglaron las persianas. Precio justo y trato inmejorable. Repetiremos seguro.”</p>
+              <div class="tcard__author"><span class="avatar">CG</span><div><strong>Carmen G.</strong><small>Torredelcampo</small></div></div>
+            </article>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__btn" id="sliderPrev" aria-label="Anterior"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+            <div class="slider__dots" id="sliderDots"></div>
+            <button class="slider__btn" id="sliderNext" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <img src="assets/img/logo-mark.svg" alt="GINSA" width="110" height="110" />
+        <div>
+          <p class="footer__title">GRUPO INTEGRAL<br />DE MULTISERVICIOS</p>
+          <span class="footer__line"></span>
+          <p class="footer__name">GINSA</p>
+        </div>
+      </div>
+      <div>
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Proyectos y Antes/Después</a></li>
+          <li><a href="presupuesto.html">Presupuesto Online</a></li>
+          <li><a href="contacto.html">Contacto y Urgencias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Garantías GINSA</h4>
+        <ul>
+          <li><a href="presupuesto.html">Presupuestos cerrados</a></li>
+          <li><a href="presupuesto.html">Visita 100% gratuita</a></li>
+          <li><a href="contacto.html">Urgencias 24 horas</a></li>
+          <li><a href="nosotros.html">Oficiales jiennenses</a></li>
+          <li><a href="proyectos.html">Materiales de calidad</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto Directo</h4>
+        <ul class="footer__contact">
+          <li><a href="tel:+34722311706">722 311 706</a></li>
+          <li><a href="mailto:ginsamultiservicios@gmail.com">ginsamultiservicios@gmail.com</a></li>
+          <li>Jaén y provincia</li>
+          <li><span class="badge-24 badge-24--sm"><span class="pulse"></span> Servicio 24 Hrs</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© <span id="year"></span> GINSA · Grupo Integral de Multiservicios. Todos los derechos reservados.</span>
+      <span><a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></span>
+    </div>
+  </footer>
+
+  <!-- ============ FLOTANTES ============ -->
+  <a href="https://wa.me/34722311706?text=Hola%20GINSA%2C%20necesito%20informaci%C3%B3n" class="fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.8 4.9-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3Z"/></svg>
+    <span class="fab-wa__tip">¿Hablamos?</span>
+  </a>
+  <button class="to-top" id="toTop" aria-label="Volver arriba">
+    <svg class="to-top__ring" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21" id="toTopCircle"/></svg>
+    <svg class="to-top__arrow" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+  <a href="tel:+34722311706" class="mobile-call">
+    <svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>
+    Llamar 24h · 722 311 706
+  </a>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
